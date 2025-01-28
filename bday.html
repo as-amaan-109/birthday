@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Mom!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.25rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    @media (min-width: 768px) {
+      .card-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .card-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      color: #d63384;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .button {
+      background-color: #d63384;
+      color: #fff;
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #c22573;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: #fff;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday, Mumma</h1>
+  <p>Here's to celebrating the most amazing mom in the world!</p>
+
+  <div class="card-container">
+    <div class="card">
+      <h2>Your Love</h2>
+      <p>Thank you for your endless love and care.</p>
+    </div>
+    <div class="card">
+      <h2>Your Strength</h2>
+      <p>You inspire us with your resilience every day.</p>
+    </div>
+    <div class="card">
+      <h2>Your Joy</h2>
+      <p>Your laughter brightens every room you enter.</p>
+    </div>
+    <div class="card">
+      <h2>Your Wisdom</h2>
+      <p>Your advice is a gift we cherish forever.</p>
+    </div>
+    <div class="card">
+      <h2>Your Kindness</h2>
+      <p>Your heart is the kindest we’ve ever known.</p>
+    </div>
+    <div class="card">
+      <h2>Your Spirit</h2>
+      <p>May your spirit always shine brightly.</p>
+    </div>
+  </div>
+
+  <a href="./src/surprise.html" class="button">Reveal the Surprise</a>
+
+  <footer>
+    Made with ❤️ by our loving family
+  </footer>
+</body>
+</html>
